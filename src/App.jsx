@@ -538,7 +538,7 @@ export default function App() {
   );
 
   const handleShare = useCallback(() => {
-    const shareUrl = "https://darkxz.netlify.app";
+    const shareUrl = "https://darkxzz.netlify.app";
     if (navigator?.clipboard?.writeText) {
       navigator.clipboard
         .writeText(shareUrl)
@@ -551,7 +551,7 @@ export default function App() {
     } else if (navigator.share) {
       navigator.share({ title: "Vinaal R", url: shareUrl }).catch(() => {});
     } else {
-      showToast("Profile link: darkxz.netlify.app");
+      showToast("Profile link: darkxzz.netlify.app");
     }
   }, [showToast]);
 
